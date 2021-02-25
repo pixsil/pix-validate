@@ -19,8 +19,8 @@
             <label for="last_name">Last name:</label><br>
             <input type="text" id="last_name" vueForm.formData.first_name><br><br>
             
-            <!-- Using pix validate for last_name errors -->
-            <pix-validate :vue-form="vueForm" field="last_name"></pix-validate>
+            <!-- Using pix validate for last_name errors (with an translation) -->
+            <pix-validate :vue-form="vueForm" field="last_name" field-translation="achternaam"></pix-validate>
 
             <!-- first name error-->
             <div v-if="vueForm.isChanged()">Dont forget to save your changes!</div>
