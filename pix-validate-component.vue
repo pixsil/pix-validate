@@ -47,8 +47,8 @@ export default {
                     error = this.label
                     // check if we have to use a field translation
                 } else if (!!this.fieldTranslation) {
-                    let field = field.replace('_', ' ');
-                    error = error.replace(field, this.fieldTranslation);
+                    let field = field.replaceAll('_', ' ');
+                    error = error.replaceAll(field, this.fieldTranslation);
                 }
             }
 
