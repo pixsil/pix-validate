@@ -1,4 +1,4 @@
-# Vue Validation component
+# Vue validation component (pix-validate)
 
 You can use this package to add easy validation to your Laravel Vue project.
 
