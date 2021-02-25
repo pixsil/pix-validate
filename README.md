@@ -1,6 +1,8 @@
 # Vue Validation component
 
-You can use this package to add easy validation to your Laravel Vue project. This package makes it easy to add field translations as attribute instead of writing long 'Custom Validation Attributes' translations inside your lang file.
+You can use this package to add easy validation to your Laravel Vue project.
+
+This package makes it also easy to add field translations as attribute instead of writing for every field 'Custom Validation Attributes' inside your language files.
 
 ## Features
 
