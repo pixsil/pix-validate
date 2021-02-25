@@ -1,4 +1,4 @@
-// v3
+// v4
 
 import PValidateComponent from './pix-validate-component';
 
