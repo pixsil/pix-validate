@@ -28,7 +28,7 @@ https://www.patreon.com/pixsil
 Add this to your app.js
 ```javascript
 // import
-import PixValidate from "./tools/pix-validate/pix-validate";
+import PixValidate from "./pix-validate/pix-validate";
 
 // use in vue
 Vue.use(PixValidate);
