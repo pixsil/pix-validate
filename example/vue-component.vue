@@ -22,7 +22,7 @@
             <!-- Using pix validate for last_name errors (with an translation) -->
             <pix-validate :vue-form="vueForm" field="last_name" field-translation="achternaam"></pix-validate>
 
-            <!-- first name error-->
+            <!-- show an message if the form is changed -->
             <div v-if="vueForm.isChanged()">Dont forget to save your changes!</div>
 
             <!-- first name error-->
