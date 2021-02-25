@@ -36,10 +36,22 @@ Vue.use(PixValidate);
 
 ## Usage
 
-Add 
+Use the component like this:
 
 ```vue
 <pix-validate :vue-form="vueForm" field="fieldname"></pix-validate>
+```
+
+If you are using Laravel validation files you see that the field name stays in the original language. You dont use translated field names inside the logic. With the attribute 'field-translation' you can give a different field name specially for the validation.
+
+```vue
+<pix-validate :vue-form="vueForm" field="last_name" field-translation="achternaam"></pix-validate>
+```
+
+Or you could override the full valiation sentance. Could be handy in some cases.
+
+```vue
+<pix-validate :vue-form="vueForm" field="last_name" label="This overrides the full validation message"></pix-validate>
 ```
 
 ## Full example
