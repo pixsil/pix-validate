@@ -10,8 +10,8 @@
 export default {
 
     props: {
-        vueForm: Object,
-        field: String,
+        vueForm: {type: Object, required: true},
+        field: {type: String, required: true},
         fieldTranslation: String,
         label: String
     },
