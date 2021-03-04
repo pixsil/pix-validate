@@ -25,6 +25,9 @@ export default {
     },
 
     methods: {
+        ucfirst(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        }
     },
 
     mounted() {
@@ -38,7 +41,6 @@ export default {
             // get error
             let error = this.vueForm.vueErrors.get(this.field);
 
-
             // if we have one
             if (!!error) {
                 // if there is given an alternative label
@@ -49,6 +51,7 @@ export default {
                 } else if (!!this.fieldTranslation) {
                     let field = field.replaceAll('_', ' ');
                     error = error.replaceAll(field, this.fieldTranslation);
+                    error = error.replaceAll(this.ucfirst(field), this.ucfirst(this.fieldTranslation));
                 }
             }
 
