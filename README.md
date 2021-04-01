@@ -37,7 +37,7 @@ wget -O resources/js/tools/pix-validate/pix-validate.js https://raw.githubuserco
 Add this to your app.js
 ```javascript
 // import
-import PixValidate from "./pix-validate/pix-validate";
+import PixValidate from "./tools/pix-validate/pix-validate";
 
 // use in vue
 Vue.use(PixValidate);
