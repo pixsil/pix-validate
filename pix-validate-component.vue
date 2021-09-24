@@ -2,7 +2,6 @@
 
 <template>
     <div>
-        {{ vueForm.vueErrors.has(field) }}
         <span class="invalid-feedback d-block" v-if="vueForm.vueErrors.has(field)">
             {{ getError() }}
         </span>
