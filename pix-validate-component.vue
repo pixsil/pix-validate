@@ -1,7 +1,10 @@
+<!-- version 2 -->
+
 <template>
     <div>
-        <span class="invalid-feedback d-block" v-show="vueForm.vueErrors.has(field)">
-            {{ error }}
+        {{ vueForm.vueErrors.has(field) }}
+        <span class="invalid-feedback d-block" v-if="vueForm.vueErrors.has(field)">
+            {{ getError() }}
         </span>
     </div>
 </template>
@@ -27,17 +30,8 @@ export default {
     methods: {
         ucfirst(string) {
             return string.charAt(0).toUpperCase() + string.slice(1);
-        }
-    },
-
-    mounted() {
-    },
-
-    created() {
-    },
-
-    computed: {
-        error() {
+        },
+        getError() {
             // get error
             let error = this.vueForm.vueErrors.get(this.field);
 
@@ -49,7 +43,7 @@ export default {
                     error = this.label
                     // check if we have to use a field translation
                 } else if (!!this.fieldTranslation) {
-                    let field = field.replaceAll('_', ' ');
+                    let field = this.field.replaceAll('_', ' ');
                     error = error.replaceAll(field, this.fieldTranslation);
                     error = error.replaceAll(this.ucfirst(field), this.ucfirst(this.fieldTranslation));
                 }
@@ -57,6 +51,21 @@ export default {
 
             return error;
         }
+    },
+
+    mounted() {
+        if (typeof this.vueForm.vueErrors.fields[this.field] === 'undefined') {
+            this.$set(this.vueForm.vueErrors.fields, this.field, null);
+        }
+    },
+
+    created() {
+    },
+
+    computed: {
+//        error() {
+//
+//        }
     }
 }
 </script>
