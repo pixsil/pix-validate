@@ -30,7 +30,7 @@ https://www.patreon.com/pixsil
 For a quick install, run this from your project root:
 ```bash
 mkdir resources/js/tools/pix-validate
-wget -O resources/js/tools/pix-validate/pix-validate-component.vue https://raw.githubusercontent.com/pixsil/pix-validate/main/pix-validate-component.vue
+wget -O resources/js/tools/pix-validate/pix-validate.vue https://raw.githubusercontent.com/pixsil/pix-validate/main/pix-validate.vue
 wget -O resources/js/tools/pix-validate/pix-validate.js https://raw.githubusercontent.com/pixsil/pix-validate/main/pix-validate.js
 ```
 
