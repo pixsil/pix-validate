@@ -1,10 +1,10 @@
 // v5
 
-import PixValidateComponent from './pix-validate-component';
+import PixValidateComponent from './pix-validate';
 
 export default {
 
     install(Vue, options) {
-        Vue.component('pix-validate', PixValidateComponent);
+        Vue.component('pix-validate', PixValidate);
     }
 }
