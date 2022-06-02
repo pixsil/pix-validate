@@ -1,6 +1,6 @@
 // v5
 
-import PixValidateComponent from './pix-validate';
+import PixValidate from './pix-validate';
 
 export default {
 
