@@ -3,8 +3,8 @@
         <!-- show an overlay on top of the diff when doing the request -->
         <div show-overlay="vueForm.isBusy()" class="loading-overlay">
 
-            <!-- first name field -->
-            <div v-if="vueForm.vueErrors.global_message">
+            <!-- see for more info the vueForm library on my Github account -->
+            <div v-if="vueForm.vueErrors.global_message && !vueForm.vueErrors.any()" class="mt-3 alert alert-warning" role="alert">
                 {{ vueForm.vueErrors.global_message }}
             </div>
 
