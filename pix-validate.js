@@ -1,6 +1,6 @@
-// v5
+// v6
 
-import PixValidate from './pix-validate';
+import PixValidate from './pix-validate.vue';
 
 export default {
 
