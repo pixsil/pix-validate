@@ -1,4 +1,4 @@
-<!-- version 2 -->
+<!-- version 3 for vue 3 -->
 
 <template>
     <div>
@@ -54,7 +54,7 @@ export default {
 
     mounted() {
         if (typeof this.vueForm.vueErrors.fields[this.field] === 'undefined') {
-            this.$set(this.vueForm.vueErrors.fields, this.field, null);
+            this.vueForm.vueErrors.fields[this.field] = null;
         }
     },
 
